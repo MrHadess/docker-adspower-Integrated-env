@@ -22,7 +22,7 @@ RUN apt-get update && \
     # install adspower
     && wget https://version.adspower.net/software/linux-x64-global/AdsPower-Global-7.3.26-x64.deb \
     && apt install -y ./AdsPower-Global-7.3.26-x64.deb \
-    && rm -f ./AdsPower-Global-7.3.26-x64.deb
+    && rm -f ./AdsPower-Global-7.3.26-x64.deb \
     # 中文环境配置
     && sed -i 's/# zh_CN.UTF-8 UTF-8/zh_CN.UTF-8 UTF-8/' /etc/locale.gen \
     && locale-gen \
