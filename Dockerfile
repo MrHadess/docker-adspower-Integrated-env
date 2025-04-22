@@ -1,7 +1,7 @@
 # Use JRE runtime as the base image
 FROM ubuntu/jre:17-22.04_91
 
-# Install Chrome, WebDriver, FFmpeg and Chinese fonts
+# Install FFmpeg and Chinese fonts
 RUN apt-get update && \
     apt-get install -y \
     wget \
