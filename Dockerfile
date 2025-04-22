@@ -1,5 +1,6 @@
 # Use JRE runtime as the base image
-FROM ubuntu/jre:17-22.04_91
+# FROM ubuntu/jre:17-22.04_91
+FROM ubuntu
 
 RUN apt-get update && \
     apt-get install -y \
