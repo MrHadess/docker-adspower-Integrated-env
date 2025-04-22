@@ -1,6 +1,8 @@
-# Use JRE runtime as the base image
-# FROM ubuntu/jre:17-22.04_91
+# Use runtime as the base image
 FROM ubuntu
+
+RUN apt-get update && \
+    apt-get install -y openjdk-17-jdk
 
 RUN apt-get update && \
     apt-get install -y \
